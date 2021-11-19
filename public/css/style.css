@@ -1,0 +1,105 @@
+:root{
+
+	--pink-red : rgb(221, 28, 60);
+	--pink-white : rgb(248, 121, 142);
+	--blue-ocean : rgb(9, 221, 221);
+	--grey-dark : rgb(50, 50, 50);
+
+}
+
+
+body {
+	background-color: var(--grey-dark);
+	color: white;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+div > b {
+	color: var(--blue-ocean);
+}
+
+hr {
+	border: 1px solid var(--pink-red);
+}
+
+form{
+	display: flex;
+}
+
+form > input {
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	color: white;
+	background: var(--grey-dark);
+	border: 1.5px solid white;
+}
+
+form > button[type="button"] {
+	color: black;
+	background: var(--blue-ocean);
+	border-radius: 5px 5px 5px 5px;
+	width: 90px;
+	height: 30px;
+	border: 1px solid white;
+}
+
+.tab {
+	overflow: hidden;
+	border: 1px solid var(--pink-red);
+	background-color: var(--pink-red);
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.5s;
+	color: white;
+}
+
+.tab button:hover {
+	background-color: var(--pink-white);
+	color: black;
+}
+
+.tab button.active {
+	background-color: var(--pink-white);
+	color: black;
+}
+
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid var(--pink-red);
+	border-top: none;
+}
+
+.btn-delete{
+    background-color: var(--pink-red);
+    width: 60px;
+    height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    border-color: white;
+}
+
+.btn-delete:hover{
+    border-color: var(--pink-red);
+}
+
+.btn-edit{
+    background-color: var(--blue-ocean);
+    width: 40px;
+    height: 20px;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    border-color: white;
+}
+
+.btn-edit:hover{
+    border-color: var(--blue-ocean);
+}

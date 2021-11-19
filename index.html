@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="public/css/style.css" />
+		<title>ConsumeAPI</title>
+	</head>
+	<body>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Users')">Users</button>
+			<button class="tablinks" onclick="openCity(event, 'Products')">Products</button>
+			<button class="tablinks" onclick="openCity(event, 'Purchases')">Purchases</button>
+		</div>
+
+		<div id="Users" class="tabcontent">
+			<form action="" method="post">
+				<b>Nome:</b>
+				<input type="text" name="nome" id="firstName" size="78" />
+				&nbsp;
+				<b>Apelido:</b>
+				<input type="text" name="apelido" id="lastName" size="78" />
+				&nbsp;
+				<button type="button" name="userPost" id="userPost">Adicionar</button>
+			</form>
+			<div id="contentUser"></div>
+		</div>
+
+		<div id="Products" class="tabcontent">
+			<form action="" method="post">
+				<b>Nome do Produto:</b>
+				<input type="text" name="nameProdut" id="name" size="68"/>
+				&nbsp;
+				<b>Descrição:</b>
+				<input type="text" name="description" id="description" size="68" />
+				&nbsp;
+				<button type="button" name="productPost" id="productPost">Adicionar</button>
+			</form>
+			<div id="contentProduct"></div>
+		</div>
+
+		<div id="Purchases" class="tabcontent">
+			<form action="" method="post">
+				<b>ID do Cliente:</b>
+				<input type="text" name="client-id" id="client-id" size="68"/>
+				&nbsp;
+				<b>ID do Produto:</b>
+				<input type="text" name="product-id" id="product-id" size="68" />
+				&nbsp;
+				<button type="button" name="purchasePost" id="purchasePost">Adicionar</button>
+			</form>
+			<div id="contentPurchase"></div>
+		</div>
+
+		<script src="public/js/tab.js"></script>
+		<script src="public/js/user.js"></script>
+		<script src="public/js/product.js"></script>
+		<script src="public/js/purchase.js"></script>
+
+	</body>
+</html>
