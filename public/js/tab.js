@@ -1,4 +1,4 @@
-function openCity(evt, section) {
+function apiFunction(evt, section) {
 	let i, tabcontent, tablinks;
 
 	tabcontent = document.getElementsByClassName("tabcontent");
